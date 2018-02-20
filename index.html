@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function add(num1, num2) {
+        let total = num1 + num2;
+        return total;
+      }
+
+      function multiply(num1, num2) {
+        let total = 0;
+        for (let i = 0; i < num2; i++) {
+          total += num1;
+        }
+        return total;
+      }
+
+      function power(num1, num2) {
+        let total = 1;
+        for (let i = 0; i < num2; i++) {
+          total *= num1;
+        }
+        return total;
+      }
+
+      function fibonacci(n) {
+        let fibStarter = [0,1];
+
+        for (let i = 0; i < n; i++) {
+          let newNum = fibStarter[i] + fibStarter[i+1];
+          fibStarter.push(newNum);
+          console.log(fibStarter);
+        }
+        return fibStarter[n-1];
+      }
+
+      console.log(add(2,4));
+      console.log(multiply(6,8));
+      console.log(power(2,8));
+      console.log(fibonacci(8));
+    </script>
+  </body>
+</html>
