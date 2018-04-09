@@ -14,7 +14,7 @@
       function multiply(num1, num2) {
         let total = 0;
         for (let i = 0; i < num2; i++) {
-          total += num1;
+          total = add(total, num1);
         }
         return total;
       }
@@ -22,7 +22,7 @@
       function power(num1, num2) {
         let total = 1;
         for (let i = 0; i < num2; i++) {
-          total *= num1;
+          total = multiply(total, num1);
         }
         return total;
       }
